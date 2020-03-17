@@ -8,6 +8,7 @@
 **Cost**: 1 false negative = 500 dollars <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 1 false positive = 10 dollars. <br>
 **Result**: training cost = 52440 dollars, testing cost = 15690 dollars. <br>
+**What we tried but not working**: oversampleing, SMOTE and feature engineering.
 
 ## Process:
 1. Dataset and Data Clean
