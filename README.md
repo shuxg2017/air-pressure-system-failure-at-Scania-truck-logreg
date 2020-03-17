@@ -18,6 +18,7 @@
 5. Best Results
 6. Other Results
 7. Training Plot
+8. Feature Engineering
 
 ### 1. Dataset and Data Clean
 The dataset we have are highly imbalanced. <br>
@@ -91,10 +92,10 @@ There are 70 columns/features corresponding to 7 bins. Here I won't mention the 
 In each class, find those 70 columns' mean. <br>
 Let's simplify the problem. We will use only one bin (10 columns) here. <br>
 In this bin, calculate the positive and negative distances between the X and the means of 10 columns. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-X has shape 60000 by 10, and positive/negativ mean has shape 1 by 10. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-formular: distance = sqrt(sum(squre(X - means))) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+X has shape 60000 by 10, and positive/negative mean has shape 1 by 10. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+**formular: distance = sqrt(sum(squre(X - means)))** <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 distance shape = 60000 by 2, because we have 2 distances. <br>
-Thus 60000 by 10 maps into 60000 by 2.<br>
+Thus for each bin, 60000 by 10 maps into 60000 by 2.<br>
 <br>
 
 **Calculating time2death**: <br>
