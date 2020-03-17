@@ -4,9 +4,9 @@
 **Task**: a binary classification task. <br>
 **Goal**: minimize the cost. <br>
 **Classes**: positive = APS failure, negative = others. <br>
-**Method**: simple logistic regression. <br>
 **Cost**: 1 false negative = 500 dollars <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 1 false positive = 10 dollars. <br>
+**Method**: simple logistic regression. <br>
 **Result**: training cost = 52440 dollars, testing cost = 15690 dollars. <br>
 **What we tried but not working**: oversampleing, SMOTE and feature engineering.
 
