@@ -15,9 +15,9 @@
 2. Maxmin Normalization
 3. Weighted Learning
 4. Threshold Optimization
-5. Results
-6. Feature Engineer: calculate distance
-7. Feature Engineer: calculate time2death
+5. Best Results
+6. Other Results
+7. Training Plot
 
 ### 1. Dataset and Data Clean
 The dataset we have are highly imbalanced. <br>
@@ -53,8 +53,29 @@ Apply more weights on the minority class.
 
 ### 4. Threshold Optimization
 
-### 5. Results
+![threshold optimization](/results/threshold_optimization.png)
 
-### 6. Feature Engineer: calculate distance
+### 5. Best Results
 
-### 7. Feature Engineer: calculate time2death
+Training cost | 	Testing cost
+--------------|---------------
+52440 |	15690
+
+![confusion matrix](/results/confusion_matrix.png)
+
+### 6. Other Results
+
+Feature Engineer | SMOTE | Training cost | 	Testing cost
+-----------------|-------|---------------|---------------
+time2death | No | 62770 |	17370
+distances | No | 54350 |	16860
+distances | Yes | 54940 |	18100
+
+### 7. Training Plot
+
+**distance, SMOTE, 54940, 18100**<br>
+
+Logistic Regression reaches its limit! <br>
+
+![plots](/results/distance%20and%20SMOTE.png)
+
