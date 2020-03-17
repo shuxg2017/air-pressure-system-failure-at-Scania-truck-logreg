@@ -1,14 +1,12 @@
-# Air Pressure System (APS) Failure Classification By Using Logistic Regression
+# Air Pressure System (APS) Failure Classification
 
 ## Overview
-This is a binary classification task. We use logistic regression to classify whether it is APS failure or not. <br>
-APS failure is the positive case, and others are the negative case. We are trying to minimize the cost from <br> 
-detecting the APS failure. <br>
-<br>
-If we misclassify a positive case (1 false negative), we have to pay 500 dollars. <br>
-If we misclassify a negative case (1 false positive), we have to pay 10 dollars. <br>
-<br>
-**The final result: cost of training dataset (52440) and cost of testing dataset (15690)** <br>
+Task: a binary classification task. <br>
+Category: positive case = APS failure, negative case = others. <br>
+Method: logistic regression. <br>
+Goal: classify if APS failure to minimize the cost. <br>
+Cost: 1 false negative = 500 dollars, 1 false positive = 10 dollars. <br>
+Result: training dataset cost = 52440 dollars, testing dataset cost = 15690 dollars. <br>
 
 ## What we did:
 1. Dataset and Data Clean
