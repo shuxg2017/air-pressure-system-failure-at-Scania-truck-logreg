@@ -53,6 +53,8 @@ Apply more weights on the minority class.
 
 ### 4. Threshold Optimization
 
+ Threshold optimization is based on our training dataset.<br>
+ 
 ![threshold optimization](/results/threshold_optimization.png)
 
 ### 5. Best Results
@@ -79,3 +81,23 @@ Logistic Regression reaches its limit! <br>
 
 ![plots](/results/distance%20and%20SMOTE.png)
 
+### 8. Feature Engineering
+
+There are 70 columns/features corresponding to 7 bins. Here I won't mention the names of those columns. <br>
+1 bin has 10 columns. <br>
+<br>
+**Calculating distance**: <br>
+<br>
+In each class, find those 70 columns' mean. <br>
+Let's simplify the problem. We will use only one bin (10 columns) here. <br>
+In this bin, calculate the positive and negative distances between the X and the means of 10 columns. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+X has shape 60000 by 10, and positive/negativ mean has shape 1 by 10. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+formular: distance = sqrt(sum(squre(X - means))) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+distance shape = 60000 by 2, because we have 2 distances. <br>
+Thus 60000 by 10 maps into 60000 by 2.<br>
+<br>
+
+**Calculating time2death**: <br>
+<br>
+To calculate time2death of each bin, sum up all 10 columns. <br>
+Thus, 60000 by 10 maps into 60000 by 1.
