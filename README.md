@@ -1,12 +1,13 @@
 # Air Pressure System (APS) Failure Classification
 
 ## Overview
-Task: a binary classification task. <br>
-Category: positive case = APS failure, negative case = others. <br>
-Method: logistic regression. <br>
-Goal: classify if APS failure to minimize the cost. <br>
-Cost: 1 false negative = 500 dollars, 1 false positive = 10 dollars. <br>
-Result: training dataset cost = 52440 dollars, testing dataset cost = 15690 dollars. <br>
+**Task**: a binary classification task. <br>
+**Goal**: minimize the cost. <br>
+**Classes**: positive = APS failure, negative = others. <br>
+**Method**: logistic regression. <br>
+**Cost**: 1 false negative = 500 dollars <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1 false positive = 10 dollars. <br>
+**Result**: training cost = 52440 dollars, testing cost = 15690 dollars. <br>
 
 ## What we did:
 1. Dataset and Data Clean
