@@ -18,8 +18,9 @@ If we misclassify a negative case (1 false positive), we have to pay 10 dollars.
 5. Threshold Optimization
 6. Results
 
-#### Dataset
+### Dataset and Data Clean
 The dataset we have are highly imbalanced. <br>
+Each sample has 170 features and 1 label. <br>
 <br>
 **Train dataset**
 
